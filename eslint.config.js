@@ -6,6 +6,14 @@ module.exports = {
     globals: {
       browser: true,
       node: true,
+      module: true,
+      describe: true,
+      it: true,
+      expect: true,
+      beforeEach: true,
+      afterEach: true,
+      before: true,
+      after: true,
     },
   },
   rules: {
