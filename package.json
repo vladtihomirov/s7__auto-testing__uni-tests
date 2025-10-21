@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js --reporter spec && mocha test/**/*.test.js --reporter json --reporter-options output=test-results.json",
+    "test": "mocha test/**/*.test.js --reporter spec && mocha test/**/*.test.js --reporter json --reporter-options output=test-results.json && mocha test/**/*.test.js --reporter mocha-simple-html-reporter --reporter-options output=test-report.html",
     "coverage": "c8 --reporter=html --reporter=text mocha test/**/*.test.js",
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
@@ -27,6 +27,7 @@
     "eslint": "^9.0.0",
     "husky": "^9.1.7",
     "mocha": "^11.7.4",
+    "mocha-simple-html-reporter": "^2.0.0",
     "nyc": "^17.1.0"
   },
   "bugs": {
