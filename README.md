@@ -34,3 +34,5 @@ Acceptance Criteria
 4. Babel is configured and works.
 5. ESLint is configured and detects errors.
 6. Pre-commit hook prevents commit with errors.
+
+Just adding this like to check MR pipeline integration.
